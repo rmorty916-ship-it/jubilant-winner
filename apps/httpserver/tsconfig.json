@@ -1,7 +1,16 @@
 {
-  "extends":"@repo/typescript-config/backend.json",
-"compilerOptions": {
-   "rootDir": "./src",
-   "outDir": "./dist" 
-}  
+  "extends": "../../packages/typescript-config/backend.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "module": "commonjs",
+    "target": "esnext",
+    "lib": ["esnext", "dom"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false
+  }
+
 }

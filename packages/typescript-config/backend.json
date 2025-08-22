@@ -1,13 +1,17 @@
 {
-    "rootDir": "./src",
-     "outDir": "./dist",
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compilerOptions": {
+
+        "rootDir": "./src",
+         "outDir": "./dist",
+    },
 
   
     "module": "nodenext",
     "target": "esnext",
     "types": [],
    
-
+    "esModuleInterop": true,
  
     "sourceMap": true,
     "declaration": true,
